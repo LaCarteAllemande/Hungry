@@ -2,14 +2,65 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <link href="./styles/output.css" rel="stylesheet">
+    <title>Hungry</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+
+    <!-- give credits to the icon designer -->
+    <div class="flex inline">
+    <div class="static l-0 px-12 bg-[#569a8c] h-screen w-min space-y-16 py-16">
+      <div>
+        <h2 class="uppercase  font-bold text-3xl">Hungry.</h2>
+      </div>
+
+      <div class="space-y-8">
+
+        <div class="group hover:cursor-pointer flex items-center justify-center space-x-2 bg-blue-500 ">
+          <a href="#">
+            <img src="./assets/hot-pot.png" class="w-8 h-8">
+          </a>
+
+          <div class="w-32 overflow-hidden group-hover:w-8  text-lg  flex items-center justify-center">
+            <h3 >Let's cook !</h3>
+          </div>
+
+        </div>
+
+
+        <div class="hover:cursor-pointer flex items-center justify-center">
+          <a href="#">
+            <img src="./assets/parchment.png" class="w-8 h-8">
+          </a>
+        </div>
+
+
+        <div class="hover:cursor-pointer flex items-center justify-center ">
+          <a href="#" class=" w-8 h-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M346.7 6C337.6 17 320 42.3 320 72c0 40 15.3 55.3 40 80s40 40 80 40c29.7 0 55-17.6 66-26.7c4-3.3 6-8.2 6-13.3s-2-10-6-13.2c-11.4-9.1-38.3-26.8-74-26.8c-32 0-40 8-40 8s8-8 8-40c0-35.7-17.7-62.6-26.8-74C370 2 365.1 0 360 0s-10 2-13.3 6zM244.6 136c-40 0-77.1 18.1-101.7 48.2l60.5 60.5c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-55.3-55.3 0 .1L2.2 477.9C-2 487-.1 497.8 7 505s17.9 9 27.1 4.8l134.7-62.4-52.1-52.1c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L199.7 433l100.2-46.4c46.4-21.5 76.2-68 76.2-119.2C376 194.8 317.2 136 244.6 136z"/></svg>
+          </a>
+        </div>
+
+
+        <div class="hover:cursor-pointer flex items-center justify-center">
+          <a href="#">
+            <img src="./assets/globe.png" class="w-8 h-8">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-4 flex items-center justify-center w-full" >
+      <div>
+      <h1 class="text-center text-4xl uppercase">Hey, wanna cook some ?</h1>
+      </div>
+
+    </div>      
+    </div>
+
+
+
+
+
   </body>
 </html>

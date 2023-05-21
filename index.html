@@ -1,15 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link href="./styles/output.css" rel="stylesheet">
+
+  <script type="text/javascript" src="scripts/animation.js"></script>
+
+  <title>Hungry</title>
+</head>
+
+<body>
+
+  <!-- give credits to the icon designer -->
+  <div class="flex">
+    <div class="flex-0  bg-[#569a8c] h-screen px-12 space-y-16 py-16 overflow-hidden">
+      <div class="">
+        <h2 class="uppercase text-center font-bold text-3xl">Hungry.</h2>
+      </div>
+
+      <div class="space-y-8">
+
+
+        <div>
+          <a href="./cook.html">
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-1 transition-all duration-500 ">
+                <img src="./assets/hot-pot.png" class="w-8 h-8">
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-24  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Let's cook</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a>
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-0 transition-all duration-500 ">
+
+                <img src="./assets/parchment.png" class="w-8 h-8">
+
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-20  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Recipies</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div>
+          <a>
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-2 transition-all duration-500 ">
+                <a href="#">
+                  <img src="./assets/carrot.png" class="w-8 h-8">
+                </a>
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-24  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Ingredients</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a>
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-0 transition-all duration-500 ">
+                <a href="#">
+                  <img src="./assets/globe.png" class="w-8 h-8">
+                </a>
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-24  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Discover</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="space-y-4 flex-1 flex items-center justify-center h-screen">
+      <div>
+        <h1 class="text-center text-5xl uppercase ">Hey, wanna cook some ?</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
 </html>

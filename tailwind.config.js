@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./*.js"],
+  content: ["./index.html", "./*.ts"],
   theme: {
-    extend: {},
+    extend: {
+      justifyItems: ['hover', 'focus'],
+      transform: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

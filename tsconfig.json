@@ -6,6 +6,6 @@
     },
 
     "files": [
-        "core.ts",
+        "scripts/animation.ts",
       ]
 }

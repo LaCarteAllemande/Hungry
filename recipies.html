@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link href="./styles/output.css" rel="stylesheet">
+
+  <script type="text/javascript" src="scripts/animation.js"></script>
+
+  <title>Hungry</title>
+</head>
+
+<body>
+
+  <!-- give credits to the icon designer -->
+  <div class="flex">
+    <div class="flex-0  bg-[#569a8c] h-screen px-12 space-y-16 py-16 overflow-hidden">
+      <div class="">
+        <h2 class="uppercase text-center font-bold text-3xl">Hungry.</h2>
+      </div>
+
+      <div class="space-y-8">
+
+
+        <div>
+          <a href="./cook.html">
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-1 transition-all duration-500 ">
+                <img src="./assets/hot-pot.png" class="w-8 h-8">
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-24  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Let's cook</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a>
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-0 transition-all duration-500 ">
+
+                <img src="./assets/parchment.png" class="w-8 h-8">
+
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-20  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Recipies</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div>
+          <a href="./ingredients.html">
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-2 transition-all duration-500 ">
+                  <img src="./assets/carrot.png" class="w-8 h-8">
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-24  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Ingredients</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a>
+            <div class="hover:cursor-pointer flex justify-center transition  group items-center  ">
+              <div class="group-hover:transform-gpu  group-hover:-translate-x-0 transition-all duration-500 ">
+                <a href="#">
+                  <img src="./assets/globe.png" class="w-8 h-8">
+                </a>
+              </div>
+              <div class="overflow-hidden w-0 group-hover:w-24  duration-300 ease-out delay-200">
+                <h3
+                  class=" whitespace-nowrap text-base font-normal uppercase text-center delay-100 opacity-0 group-hover:opacity-100 duration-500">
+                  Discover</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="flex justify-between w-full my-8">
+        <div class="mx-16">
+          <h2 class="p-2  text-xl font-semibold">List of recipies</h2>
+        </div>
+
+        <div class="mx-16  hover:scale-110 transition duration-200">
+          <button class="bg-[#569a8c] p-2 px-4 rounded-xl   text-normal">Add recipie</button>
+        </div>
+      </div>
+
+      <div class=" mx-8">
+        <table class="table-auto border-collapse w-full text-center ">
+          <thead>
+            <tr >
+              <th class="border border-slate-600  py-2">Name</th>
+              <th class="border border-slate-600  ">Healthiness</th>
+              <th class="border border-slate-600  ">Time</th>
+              <th class="border border-slate-600">Rating</th>
+              <th class="border border-slate-600">Calories</th>
+              
+              <th class="border border-slate-600">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td  class="border border-slate-600 py-1 ">Pâtes carbonara</td>
+              <td class="border border-slate-600 py-1">
+                <div class="flex  justify-center  h-min ">
+                  <div class="flex items-center justify-center ">
+                    <p class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-2 rounded dark:bg-blue-200 dark:text-blue-800">2</p>
+                    <p class="ml-2 font-medium text-gray-900">Excellent</p>
+                </div>               
+                </div>
+
+              </td>
+              <td class="border border-slate-600  ">45 min</td>
+              <td class="border border-slate-600  ">
+                <ul class="flex justify-center">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="mr-1 h-5 w-5 text-warning">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="mr-1 h-5 w-5 text-warning">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="mr-1 h-5 w-5 text-warning">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mr-1 h-5 w-5 text-warning">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mr-1 h-5 w-5 text-warning">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                    </svg>
+                  </li>
+                </ul>
+              </td>
+              <td class="border border-slate-600  ">700</td>
+              <td class="border border-slate-600  ">
+                <div class="flex  justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 100 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  
+                </div>
+
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

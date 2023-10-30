@@ -1,5 +1,8 @@
-const addRecipieButton = document.getElementById('add-Recipie');
-addRecipieButton.addEventListener('click', () => {
-    setTimeout(() => {
-    }, 500);
-});
+// Initialization for ES Users
+import {
+  Modal,
+  Ripple,
+  initTE,
+} from "tw-elements";
+
+initTE({ Modal, Ripple });

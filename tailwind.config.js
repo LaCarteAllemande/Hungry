@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./ingredients.html", "./recipies.html","./*.ts"],
+  content: [    "./src/**/*.{html,js}",
+  "./node_modules/tw-elements/dist/js/**/*.js"],
   theme: {
     extend: {
       justifyItems: ['hover', 'focus'],
@@ -10,5 +11,6 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
+  darkMode: "class"
 }

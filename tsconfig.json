@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "sourceMap": true
+        "target": "ES6",
+        "module":"umd"
+        
     },
 
-    "files": [
-        "scripts/animation.ts",
-      ]
+    "include": ["objects/*.ts", "scripts/*.ts", "main.ts"]
 }

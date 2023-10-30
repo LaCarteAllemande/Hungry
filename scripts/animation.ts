@@ -1,22 +1,13 @@
-const hiddenDivs = document.getElementsByClassName('hidden-div') as HTMLCollectionOf<HTMLElement>;
-  
+
+const addRecipieButton = document.getElementById('add-Recipie') as HTMLElement;
 
 
-Array.from(hiddenDivs).forEach((div: Element) => {
-    div.addEventListener('mouseover', () => {
-        setTimeout(() => {
-            div.classList.remove('delay-200');
-            console.log(1)
-        }, 500); 
-      });
+addRecipieButton.addEventListener('click', () => {
+  setTimeout(() => {
     
-      div.addEventListener('mouseleave', () => {
-        div.classList.remove('delay-500');
-        console.log(2)
-    });
-  });
+  }, 500);
+});
 
-  
 
 
 

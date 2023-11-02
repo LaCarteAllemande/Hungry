@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
         "target": "ES6",
-        "module":"umd"
+        "outFile": "./scripts/build.js"
         
     },
 
-    "include": ["objects/*.ts", "scripts/*.ts", "main.ts"]
+    "include": ["objects/*.ts", "scripts/*.ts"]
 }

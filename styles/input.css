@@ -8,3 +8,35 @@
 .welcome{
     background-image: url('../assets/table.jpg');
 }
+
+
+@layer components {
+    .case {
+      @apply border border-slate-600 py-1;
+    }
+
+    .healthiness-score{
+        @apply bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-2 rounded dark:bg-blue-200 dark:text-blue-800
+    }
+
+    .healthiness-text{
+        @apply ml-2
+    }
+
+    .case-content{
+        @apply flex items-center justify-center
+    }
+
+    .euro-symbol{
+        @apply w-6 h-6
+    }
+
+    .star-symbol{
+        @apply mr-1 h-5 w-5 text-warning
+    }
+
+
+
+
+  }
+

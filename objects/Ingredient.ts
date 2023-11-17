@@ -1,7 +1,13 @@
 //for 100g
+
+enum IngredienType{
+	Fruit="Fruit",
+	Meat="Meat"
+}
 class Ingredient {
 	private name: string;
 	private id :string;
+	private type:IngredienType;
 	private calories: number;
 	private protein: number;
 	private carbohydrates: number;
@@ -25,6 +31,10 @@ class Ingredient {
 		return this.name
 	}
 
+	public getType():IngredienType {
+		return this.type;
+	}
+
 	public save(){
 			const jsonString = JSON.stringify(this);
 
@@ -40,6 +50,10 @@ class Ingredient {
 		Ingredient.nbIngredients++;
 		localStorage.setItem("nbIngredients", Ingredient.nbIngredients.toString());
 	}
+
+	static getIngredients(): Ingredient[] {
+		return new Array();
+	  }
   }	
 
 
